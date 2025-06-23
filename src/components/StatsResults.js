@@ -517,9 +517,9 @@ const StatsResults = ({ data }) => {
         )}
 
         <h4>Medidas de Tendencia Central</h4>
-        <p>Media: {stats.mean.toFixed(4)}</p>
-        <p>Mediana: {stats.median.toFixed(4)}</p>
-        <p>Moda: {Array.isArray(stats.mode) ? stats.mode.join(', ') : stats.mode.toFixed(4)}</p>
+        <p>Media: {stats.mean.toFixed(2)}</p>
+        <p>Mediana: {stats.median.toFixed(2)}</p>
+        <p>Moda: {Array.isArray(stats.mode) ? stats.mode.join(', ') : stats.mode.toFixed(2)}</p>
         
         <h4>Medidas de Dispersión</h4>
         <p>Varianza Poblacional: {stats.populationVariance.toFixed(4)}</p>
